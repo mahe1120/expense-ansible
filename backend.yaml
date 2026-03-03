@@ -60,7 +60,7 @@
       enabled: yes
       name: backend 
 
-  - name: Load schema
+  - name: Import mysql data
     community.mysql.mysql_db:
       state: import
       name: all
