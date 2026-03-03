@@ -53,7 +53,7 @@
       name: backend 
 
   - name: Load schema
-    ansible.builtin.command: "mysql -h mysql.mahedevops.online -uroot -pExpenseApp@1 < /app/schema/backend.sql"
+    ansible.builtin.command: mysql -h mysql.mahedevops.online -uroot -pExpenseApp@1 < /app/schema/backend.sql
 
   - name: Restart the backend service
     ansible.builtin.service:
