@@ -26,8 +26,8 @@
       login_user: root
       login_password: ExpenseApp@1
       login_host: mysql.mahedevops.online
-      register: mysql_info
-      ignore_errors: true
+    register: mysql_info
+    ignore_errors: true
     
   - name: Print the output
     ansible.builtin.debug:
